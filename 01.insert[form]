@@ -1,0 +1,10 @@
+<form action="submit" method="POST">
+    @csrf
+<div class="form-group">
+<input type="email"name ="email" class="form-control" placeholder="email">
+</div><br>
+<div class="form-group">
+<input type="password" name="password" class="form-control"placeholder="password">
+</div><br>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
