@@ -1,0 +1,5 @@
+Route::get('/', function () {
+    return view('index');
+});
+Route::view ('form','index');
+Route::post('submit','companies@save');
