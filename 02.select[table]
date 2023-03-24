@@ -1,0 +1,17 @@
+<table border="1">
+@foreach($data as $i)
+
+<tr>
+<th>id</th>
+<th>email</th>
+<th>password</th>
+</tr>
+<tr>
+    
+    <td>{{$i->id}}</td>
+    <td>{{$i->email}}</td>
+    <td>{{$i->password}}</td>
+</tr>
+
+@endforeach
+</table>
