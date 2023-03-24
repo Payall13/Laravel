@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\user1;
+
+class users extends Controller
+{
+    //
+    function list()
+    {
+        $data=user1::orderBy('email','desc')->get();
+        return view('userview',['data'=>$data]);
+    }
+}
