@@ -1,0 +1,6 @@
+Route::get('/', function () {
+    return view('index');
+});
+Route::get('list','users@list');
+Route::view ('form','index');
+Route::post('submit','companies@save');
