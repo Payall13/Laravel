@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\company;
+class companies extends Controller
+
+
+{
+    //
+    function save(request $req)
+    {
+        $company=new company;
+        $company->email=$req->email;
+        $company->password=$req->password;
+        $company->save();
+    }
+}
