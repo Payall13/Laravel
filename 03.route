@@ -1,0 +1,9 @@
+Route::get('/', function () {
+    return view('index');
+    });
+route::view('form','index');
+Route::post('submit','companies@save');
+Route::get('list','companies@list');
+Route::get('/delete/{id}','companies@delete');
+Route::get('/update/{id}','companies@update');
+Route::post('/update','companies@updatedata');
